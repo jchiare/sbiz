@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Into The Fourth — Helping partners care for new mothers</title>
+  <meta name="description" content="Practical guidance for partners supporting new mothers through the fourth trimester: recovery, feeding, sleep and emotional wellbeing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a href="#" class="logo">Into The Fourth</a>
+      <ul>
+        <li><a href="#why">Why partners</a></li>
+        <li><a href="#learn">What you'll learn</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#guide">Free guide</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero wrap">
+      <h1>She carried the baby.<br>Now you carry her.</h1>
+      <p>Into The Fourth helps partners show up for new mothers in the weeks after birth, with practical, doable guidance for recovery, feeding, sleep and emotional wellbeing.</p>
+      <a href="#guide" class="btn">Get the free partner guide</a>
+    </div>
+
+    <section id="why" class="wrap">
+      <h2>The fourth trimester</h2>
+      <p class="sub">The first months after birth are some of the hardest of a mother's life. She's healing from birth while caring for a newborn around the clock. You're the person closest to her, and you can make the biggest difference.</p>
+      <div class="grid">
+        <div class="card"><h3>Her body is healing</h3><p>Whether it was a vaginal birth or a C-section, recovery takes weeks. She needs rest, food, water, and someone else handling the rest.</p></div>
+        <div class="card"><h3>She's feeding around the clock</h3><p>Breast or bottle, newborns eat every few hours, day and night. There's a lot you can take on so she isn't doing it alone.</p></div>
+        <div class="card"><h3>Her mind matters too</h3><p>Big emotions are normal. Knowing the signs of postpartum depression and anxiety, and when to get help, is one of the most important things you can learn.</p></div>
+      </div>
+    </section>
+
+    <section id="learn" class="wrap">
+      <h2>What you'll learn</h2>
+      <p class="sub">No one teaches partners this stuff. Into The Fourth does.</p>
+      <ul class="topics">
+        <li><strong>Supporting her recovery</strong><span>What healing looks like, and how to make it easier.</span></li>
+        <li><strong>Helping with feeding</strong><span>Practical ways to help, however your baby is fed.</span></li>
+        <li><strong>Protecting her sleep</strong><span>Night-shift plans that actually work.</span></li>
+        <li><strong>Running the household</strong><span>Meals, chores and logistics, off her plate.</span></li>
+        <li><strong>Managing visitors</strong><span>Setting boundaries so she can rest.</span></li>
+        <li><strong>Spotting warning signs</strong><span>Physical and emotional red flags, and what to do.</span></li>
+      </ul>
+    </section>
+
+    <section id="support" class="wrap">
+      <h2>Personalized support</h2>
+      <p class="sub">Want guidance built around your family? Choose the level of support that fits.</p>
+      <div class="offers">
+        <div class="card offer">
+          <h3>Four Weeks of Support</h3>
+          <div class="price">$129</div>
+          <p>Affordable, personalized guidance for partners through the first month.</p>
+          <ul>
+            <li>An in-depth survey for mama</li>
+            <li>Daily personalized emails for 4 weeks</li>
+          </ul>
+          <a class="btn" href="four-weeks.html">Get started</a>
+        </div>
+        <div class="card offer featured">
+          <span class="tag">Most complete</span>
+          <h3>Full Circle Support</h3>
+          <div class="price">$499</div>
+          <p>Personalized support for both of you, with calls and hands-on setup.</p>
+          <ul>
+            <li>A call with mama</li>
+            <li>A call with you, her partner</li>
+            <li>A midway check-in call</li>
+            <li>Answers to your questions as they come up</li>
+            <li>Meal train set up for you</li>
+            <li class="addon">Optional postpartum gift basket (+$129)</li>
+          </ul>
+          <a class="btn" href="full-circle.html">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="wrap">
+      <div class="guide">
+        <h2>The free partner guide</h2>
+        <p class="sub" style="margin-bottom:24px">A short, practical guide to your first weeks as a new parent: what she's going through, and exactly how to help. Enter your email and it'll be in your inbox in minutes.</p>
+        <form id="guide-form" action="https://app.kit.com/forms/YOUR_FORM_ID/subscriptions" method="post">
+          <input type="email" name="email_address" placeholder="Your email" required aria-label="Email address">
+          <button class="btn" type="submit">Send me the guide</button>
+        </form>
+        <p class="msg" id="guide-msg" role="status"></p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="mission">
+        <h2>Why Into The Fourth</h2>
+        <p>Pregnancy comes with appointments, classes and checklists. Then the baby arrives, and most of that support disappears just when mothers need it most.</p>
+        <p>Partners want to help but often don't know how. Into The Fourth gives them the knowledge and confidence to provide the care new mothers deserve.</p>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-top:0">
+      <div class="help">
+        <strong>If you're worried about her right now:</strong> call 911 in an emergency. In the US, the National Maternal Mental Health Hotline is free, confidential and open 24/7: call or text <a href="tel:18338526262">1-833-TLC-MAMA (1-833-852-6262)</a>.
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">© 2026 Into The Fourth · <a href="mailto:hello@example.com">hello@example.com</a></footer>
+
+  <script>
+    const form = document.getElementById('guide-form');
+    const msg = document.getElementById('guide-msg');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button');
+      btn.disabled = true; btn.textContent = 'Sending…'; msg.textContent = '';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error();
+        form.reset();
+        msg.textContent = 'Thank you! Check your inbox for the guide.';
+      } catch {
+        msg.textContent = 'Something went wrong. Please try again.';
+      } finally {
+        btn.disabled = false; btn.textContent = 'Send me the guide';
+      }
+    });
+  </script>
+</body>
+</html>
